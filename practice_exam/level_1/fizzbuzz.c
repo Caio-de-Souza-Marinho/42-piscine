@@ -1,41 +1,50 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ulstr.c                                            :+:      :+:    :+:   */
+/*   fizzbuzz.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: caide-so <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/31 19:30:44 by caide-so          #+#    #+#             */
-/*   Updated: 2024/08/01 11:32:31 by caide-so         ###   ########.fr       */
+/*   Created: 2024/08/01 13:19:20 by caide-so          #+#    #+#             */
+/*   Updated: 2024/08/01 13:44:42 by caide-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	main(int argc, char **argv)
-{
-	int	i;
+#include <stdio.h>
 
-	i = 0;
-	if (argc == 2)
+void	ft_fizzbuzz()
+{
+	char	i;
+
+	i = 1;
+	while (i <= 100)
 	{
-		while (argv[1][i] != '\0')
+		if (i % 3 == 0 && i % 5 == 0)
 		{
-			if (argv[1][i] >= 'A' && argv[1][i] <= 'Z')
-			{
-				argv[1][i] += 32;
-				write(1, &argv[1][i], 1);
-			}
-			else if (argv[1][i] >= 'a' && argv[1][i] <= 'z')
-			{
-				argv[1][i] -= 32;
-				write(1, &argv[1][i], 1);
-			}
-			else
-				write(1, &argv[1][i], 1);
+			printf("fizzbuzz\n");
 			i++;
 		}
+		else if (i % 3 == 0)
+		{
+			printf("buzz\n");
+			i++;
+		}
+		else if (i % 5 == 0)
+		{
+			printf("fizz\n");
+			i++;
+		}
+		//else if (i == 100)
+		//	printf("buzz");
+		printf("%d\n", i);
+		i++;
 	}
-	write(1, "\n", 1);
+}
+
+int	main(void)
+{
+	ft_fizzbuzz();
 	return (0);
 }

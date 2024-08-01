@@ -1,27 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_program_name.c                            :+:      :+:    :+:   */
+/*   first_word.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: caide-so <caide-so@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: caide-so <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/25 19:42:46 by caide-so          #+#    #+#             */
-/*   Updated: 2024/08/01 13:29:05 by caide-so         ###   ########.fr       */
+/*   Created: 2024/08/01 11:58:25 by caide-so          #+#    #+#             */
+/*   Updated: 2024/08/01 13:16:15 by caide-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	main(int argc, char *argv[])
+int	main(int argc, char **argv)
 {
 	int	i;
 
-	(void)argc;
 	i = 0;
-	while (argv[0][i] != '\0')
+	if (argc == 2)
 	{
-		write(1, &argv[0][i], 1);
-		i++;
+		while (argv[1][i] && (argv[1][i] == ' ' || argv[1][i] == '\t'))
+			i++;
+		while (argv[1][i] && (argv[1][i] != ' ' && argv[1][i] != '\t'))
+		{
+			write(1, &argv[1][i], 1);
+			i++;
+		}
 	}
+	write(1, "\n", 1);
 	return (0);
 }
