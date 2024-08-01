@@ -6,7 +6,7 @@
 /*   By: caide-so <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 11:39:29 by caide-so          #+#    #+#             */
-/*   Updated: 2024/07/30 11:43:27 by caide-so         ###   ########.fr       */
+/*   Updated: 2024/08/01 17:23:48 by caide-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,12 @@ int	main(void)
 	ft_print_numbers();
 	return (0);
 }
+*/
+
+/*
+Write a function that displays all digits in ascending order.
+
+Your function must be declared as follows:
+
+void	ft_print_numbers(void);
 */

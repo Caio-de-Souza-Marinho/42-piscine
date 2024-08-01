@@ -6,7 +6,7 @@
 /*   By: caide-so <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/01 15:46:21 by caide-so          #+#    #+#             */
-/*   Updated: 2024/08/01 15:50:37 by caide-so         ###   ########.fr       */
+/*   Updated: 2024/08/01 17:47:07 by caide-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,4 +30,13 @@ int	main(void)
 	printf("%d %d", a, b);
 	return (0);
 }
+*/
+
+/*
+Write a function that swaps the contents of two integers the adresses of which
+are passed as parameters.
+
+Your function must be declared as follows:
+
+void	ft_swap(int *a, int *b);
 */

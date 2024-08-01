@@ -6,7 +6,7 @@
 /*   By: caide-so <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 11:35:21 by caide-so          #+#    #+#             */
-/*   Updated: 2024/07/30 11:38:36 by caide-so         ###   ########.fr       */
+/*   Updated: 2024/08/01 17:21:50 by caide-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,13 @@ int	main(void)
 	write(1, "\n", 1);
 	return (0);
 }
+
+/*
+Write a program that displays all digits in descending order, followed by a
+newline.
+
+Example:
+$> ./ft_countdown | cat -e
+9876543210$
+$>
+*/

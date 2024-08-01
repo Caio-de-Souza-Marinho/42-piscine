@@ -6,7 +6,7 @@
 /*   By: caide-so <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/31 13:09:56 by caide-so          #+#    #+#             */
-/*   Updated: 2024/07/31 13:48:10 by caide-so         ###   ########.fr       */
+/*   Updated: 2024/08/01 17:41:26 by caide-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,4 +35,12 @@ int	main(void)
 	printf("%s", s1);
 	return (0);
 }
+*/
+
+/*
+Reproduce the behavior of the function strcpy (man strcpy).
+
+Your function must be declared as follows:
+
+char    *ft_strcpy(char *s1, char *s2);
 */

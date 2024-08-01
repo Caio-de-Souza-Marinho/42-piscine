@@ -6,7 +6,7 @@
 /*   By: caide-so <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/31 13:49:02 by caide-so          #+#    #+#             */
-/*   Updated: 2024/07/31 13:51:40 by caide-so         ###   ########.fr       */
+/*   Updated: 2024/08/01 17:42:14 by caide-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,12 @@ int	main(void)
 	printf("%d", len);
 	return (0);
 }
+*/
+
+/*
+Write a function that returns the length of a string.
+
+Your function must be declared as follows:
+
+int	ft_strlen(char *str);
 */
