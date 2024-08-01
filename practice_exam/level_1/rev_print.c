@@ -1,57 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   fizzbuzz.c                                         :+:      :+:    :+:   */
+/*   rev_print.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: caide-so <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/01 13:19:20 by caide-so          #+#    #+#             */
-/*   Updated: 2024/08/01 15:45:33 by caide-so         ###   ########.fr       */
+/*   Created: 2024/08/01 15:52:17 by caide-so          #+#    #+#             */
+/*   Updated: 2024/08/01 16:06:27 by caide-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
+int	main(int argc, char **argv)
 {
-	write(1, &c, 1);
-}
+	int	len;
 
-void	ft_putnbr(int nb)
-{
-	if (nb >= 10)
-		ft_putnbr(nb / 10);
-	ft_putchar((nb % 10) + '0');
-}
-
-void	ft_fizzbuzz(void)
-{
-	int	i;
-
-	i = 1;
-	while (i <= 100)
+	len = 0;
+	if (argc == 2)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
+		while (argv[1][len] != '\0')
 		{
-			write(1, "fizzbuzz", 8);
+			len++;
 		}
-		else if (i % 3 == 0)
+		while (argv[1][len - 1] != '\0')
 		{
-			write(1, "fizz", 4);
+			write(1, &argv[1][len - 1], 1);
+			len--;
 		}
-		else if (i % 5 == 0)
-		{
-			write(1, "buzz", 4);
-		}
-		else
-			ft_putnbr(i);
-		write(1, "\n", 1);
-		i++;
 	}
-}
-
-int	main(void)
-{
-	ft_fizzbuzz();
+	else
+		write(1, "\n", 1);
 	return (0);
 }

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   fizzbuzz.c                                         :+:      :+:    :+:   */
+/*   rotone.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: caide-so <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/01 13:19:20 by caide-so          #+#    #+#             */
-/*   Updated: 2024/08/01 15:45:33 by caide-so         ###   ########.fr       */
+/*   Created: 2024/08/01 16:15:29 by caide-so          #+#    #+#             */
+/*   Updated: 2024/08/01 16:56:28 by caide-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,41 +17,25 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	ft_putnbr(int nb)
-{
-	if (nb >= 10)
-		ft_putnbr(nb / 10);
-	ft_putchar((nb % 10) + '0');
-}
-
-void	ft_fizzbuzz(void)
+int	main(int argc, char **argv)
 {
 	int	i;
 
-	i = 1;
-	while (i <= 100)
+	i = 0;
+	if (argc == 2)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
+		while (argv[1][i] != '\0')
 		{
-			write(1, "fizzbuzz", 8);
-		}
-		else if (i % 3 == 0)
-		{
-			write(1, "fizz", 4);
-		}
-		else if (i % 5 == 0)
-		{
-			write(1, "buzz", 4);
-		}
-		else
-			ft_putnbr(i);
-		write(1, "\n", 1);
-		i++;
+			if ((argv[1][i] >= 'a' && argv[1][i] <= 'y')
+					|| (argv[1][i] >= 'A' && argv[1][i] <= 'Y'))
+				ft_putchar(argv[1][i] + 1);
+			else if (argv[1][i] == 'z' || argv[1][i] == 'Z')
+				ft_putchar(argv[1][i] - 25);
+			else
+				ft_putchar(argv[1][i]);
+			i++;
+		}		
 	}
-}
-
-int	main(void)
-{
-	ft_fizzbuzz();
+	write(1, "\n", 1);
 	return (0);
 }
