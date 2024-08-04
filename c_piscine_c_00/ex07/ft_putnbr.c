@@ -26,7 +26,7 @@ void	ft_putnbr(int nb)
 	if (num < 0)
 	{
 		ft_putchar('-');
-		num = -nb;
+		num = -num;
 	}
 	if (num >= 10)
 	{
@@ -35,3 +35,20 @@ void	ft_putnbr(int nb)
 	c = num % 10 + '0';
 	ft_putchar(c);
 }
+/*
+int	main(void)
+{
+	ft_putnbr(42);
+	ft_putchar('\n');
+	ft_putnbr(-42);
+	ft_putchar('\n');
+	ft_putnbr(0);
+	ft_putchar('\n');
+	ft_putnbr(2147483647);
+	ft_putchar('\n');
+	ft_putnbr(-2147483648);
+	ft_putchar('\n');
+	return (0);
+	return (0);
+}
+*/
