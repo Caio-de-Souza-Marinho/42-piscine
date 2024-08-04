@@ -6,7 +6,7 @@
 /*   By: caide-so <caide-so@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/15 20:23:22 by caide-so          #+#    #+#             */
-/*   Updated: 2024/07/30 15:54:40 by caide-so         ###   ########.fr       */
+/*   Updated: 2024/07/30 16:53:28 by caide-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,18 +27,18 @@ void	ft_rev_int_tab(int *tab, int size)
 		j--;
 	}	
 }
-/*
+
 #include <stdio.h>
 
 int	main(void)
 {
-	int tab[4] = {1, 1, 3, 4};
-	for(int i = 0; i < 4; i++)
+	int tab[5] = {1, 1, 3, 4, 88};
+	for(int i = 0; i < 5; i++)
 		printf("%d ", tab[i]);
 	printf("\n");
-	ft_rev_int_tab(tab, 4);
-	for(int i = 0; i < 4; i++)
+	ft_rev_int_tab(tab, 5);
+	for(int i = 0; i < 5; i++)
 		printf("%d ", tab[i]);
 	return (0);
 }
-*/
+

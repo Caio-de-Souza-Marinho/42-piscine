@@ -6,7 +6,7 @@
 /*   By: caide-so <caide-so@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/15 16:54:13 by caide-so          #+#    #+#             */
-/*   Updated: 2024/07/30 15:44:47 by caide-so         ###   ########.fr       */
+/*   Updated: 2024/07/30 16:45:22 by caide-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_ultimate_div_mod(int *a, int *b)
 	*a = tmpa / tmpb;
 	*b = tmpa % tmpb;
 }
-/*
+
 #include <stdio.h>
 
 int	main(void)
@@ -31,4 +31,4 @@ int	main(void)
 	printf("%d %d\n", a, b);
 	return (0);
 }
-*/
+

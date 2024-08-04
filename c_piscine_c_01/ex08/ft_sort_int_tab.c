@@ -6,7 +6,7 @@
 /*   By: caide-so <caide-so@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 11:31:24 by caide-so          #+#    #+#             */
-/*   Updated: 2024/07/30 15:58:07 by caide-so         ###   ########.fr       */
+/*   Updated: 2024/07/30 16:55:43 by caide-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void	ft_sort_int_tab(int *tab, int size)
 		i++;
 	}
 }
-/*
+
 #include <stdio.h>
 
 int	main(void)
@@ -47,4 +47,4 @@ int	main(void)
 		printf("%d ", tab[i]);
 	return (0);
 }
-*/
+

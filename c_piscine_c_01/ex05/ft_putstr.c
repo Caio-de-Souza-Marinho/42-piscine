@@ -6,7 +6,7 @@
 /*   By: caide-so <caide-so@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/15 19:01:46 by caide-so          #+#    #+#             */
-/*   Updated: 2024/07/30 15:47:49 by caide-so         ###   ########.fr       */
+/*   Updated: 2024/07/30 16:47:01 by caide-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@ void	ft_putstr(char *str)
 		str++;
 	}
 }
-/*
+
 int	main(void)
 {
-	char str[] = "Hello, World!";
+	char str[] = "alfalksfjHello, World!";
 	ft_putstr(str);
 	return (0);
 }
-*/
+
