@@ -27,7 +27,7 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	}
 	return (dest);
 }
-
+/*
 #include <stdio.h>
 
 int main()
@@ -40,4 +40,4 @@ int main()
 	printf("Destination: %s", dest);
 	return 0;
 }
-
+*/
