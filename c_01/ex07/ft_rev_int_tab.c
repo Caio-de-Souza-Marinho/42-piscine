@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: caide-so <caide-so@student.42sp.org.br>    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/15 20:23:22 by caide-so          #+#    #+#             */
-/*   Updated: 2024/07/30 16:53:28 by caide-so         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 void	ft_rev_int_tab(int *tab, int size)
 {
 	int	i;
@@ -27,7 +15,7 @@ void	ft_rev_int_tab(int *tab, int size)
 		j--;
 	}	
 }
-
+/*
 #include <stdio.h>
 
 int	main(void)
@@ -41,4 +29,4 @@ int	main(void)
 		printf("%d ", tab[i]);
 	return (0);
 }
-
+*/
