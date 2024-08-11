@@ -1,18 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: caide-so <caide-so@student.42sp.org.br     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/21 17:00:25 by caide-so          #+#    #+#             */
-/*   Updated: 2024/07/21 17:51:41 by caide-so         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-#include <stdio.h>
-#include <string.h>
-
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int	i;
@@ -65,6 +50,8 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	return (total_len);
 }
 /*
+#include <stdio.h>
+
 int	main(void)
 {
 	char dest[20] = "Hello";

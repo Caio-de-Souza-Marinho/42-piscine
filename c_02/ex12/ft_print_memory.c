@@ -78,7 +78,7 @@ void	ft_print_memory(void *addr, unsigned int size)
 		i += 16;
 	}
 }
-
+/*
 int	main(void)
 {
 	//char	string0[] = "Bonjour les amin";
@@ -96,3 +96,4 @@ int	main(void)
 	ft_print_memory(string5, 12);
 	return (0);
 }
+*/
